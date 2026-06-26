@@ -331,33 +331,33 @@ print(f"\t\tDensite medicale nationale : {densite_nationale:.2f} medecins/1000 h
 print(f"\t\tValeur totale du stock : {valeur_stock:,.0f} FCFA")
 
 print(f'-'*35)
-if couverture_vacinale_bz < 95:
+if couverture_vacinale_bz < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Brazzaville : ZONE INSUFFISANTE ")
-elif couverture_vacinale_bz < 80 or couverture_vacinale_bz >= 82:
+elif couverture_vacinale_bz >= 80 and couverture_vacinale_bz < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Brazzaville : ZONE A RISQUE  ")
 else :
     print(f"Brazzaville : ZONE CRITIQUE")
 
 print(f'-'*35)
-if couverture_vacinale_pn < 95:
+if couverture_vacinale_pn < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Pointe-Noire : ZONE INSUFFISANTE ")
-elif couverture_vacinale_pn < 80 or couverture_vacinale_pn >= 82:
+elif couverture_vacinale_pn >= 80 and couverture_vacinale_pn < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Pointe-Noire : ZONE A RISQUE  ")
 else :
     print(f"Pointe-Noire : ZONE CRITIQUE")
 
 print(f'-'*35)
-if couverture_vacinale_pl < 95:
+if couverture_vacinale_pl < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Pool : ZONE INSUFFISANTE ")
-elif couverture_vacinale_pl < 80 or couverture_vacinale_pl >= 82:
+elif couverture_vacinale_pl  >= 80 and couverture_vacinale_pl < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Pool : ZONE A RISQUE  ")
 else :
     print(f"Pool : ZONE CRITIQUE")
 
 print(f'-'*35)
-if couverture_vacinale_sga < 95:
+if couverture_vacinale_sga < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Sangha : ZONE INSUFFISANTE ")
-elif couverture_vacinale_sga < 80 or couverture_vacinale_sga >= 82:
+elif couverture_vacinale_sga >= 80 and couverture_vacinale_sga < SEUIL_OMS_COUVERTURE_VACCIN:
     print(f"Sangha : ZONE A RISQUE  ")
 else :
     print(f"Sangha : ZONE CRITIQUE")
