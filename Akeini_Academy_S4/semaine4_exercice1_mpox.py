@@ -82,7 +82,7 @@ for i in range(1,nb_districts+1):
 
 
     total_suspects+=suspects
-    total_confirmes+=confirmes
+    total_confirmes+=confirmes # total_confirmes = total_confirmes + confirmes
     total_deces=total_deces+deces
     total_actifs += cas_actifs
     pourcentage = (max_cas / total_confirmes) * 100
