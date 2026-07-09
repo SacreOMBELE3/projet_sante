@@ -28,12 +28,8 @@ while True:
 
         elif signe == "*":
             resultat = multiplication(a, b)
-
-        elif signe == "/":
-            resultat = division(a, b)
-
         else:
-            resultat = "Signe invalide"
+            resultat = division(a, b)
 
         print("Résultat :", resultat)
         break
