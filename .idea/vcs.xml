@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Akeini_Academy_S2" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Akeini_Academy_S5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Akeini_Academy_S6" vcs="Git" />
   </component>
 </project>
